@@ -84,7 +84,7 @@ img {
     letter-spacing: 0.54px;
     text-transform: uppercase;
     text-decoration: none;
-    margin-right: 76px;
+
 }
 
 .header-logo-studio {
@@ -164,6 +164,10 @@ img {
     transform: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.menu-studio {
+    color: #404bbf;
+}
+
 .mob-menu-list-item-link:hover,
 .mob-menu-list-item-link:focus {
     color: #404bbf;
@@ -186,6 +190,10 @@ img {
     text-decoration: none;
     font-style: normal;
     transform: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-tel {
+    color: #4D5AE5;
 }
 
 .mob-menu-addres-list-item-link:hover,
@@ -230,7 +238,7 @@ img {
 /** Section-order **/
 .section-order {
     background-color: #2E2F42;
-    padding: 188px 0;
+    padding: 72px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -631,6 +639,10 @@ img {
     font-size: 12px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     color: #ffffff;
+
+}
+
+.subscribe-label {
     margin-bottom: 16px;
 }
 
@@ -895,6 +907,10 @@ img {
         max-width: 768px;
     }
 
+    .header-logo {
+        margin-right: 120px;
+    }
+
     .header-menu-list {
         display: flex;
         gap: 40px;
@@ -949,11 +965,8 @@ img {
         padding: 16px 0;
     }
 
-    @media screen and (max-width: 1157) {
-
-        .header-addres-item:not(:last-child) {
-            margin-bottom: 12px;
-        }
+    .header-addres-item:not(:last-child) {
+        margin-bottom: 12px;
     }
 
     .header-addres-link {
@@ -979,6 +992,7 @@ img {
 
     .section-order {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tablet.jpg);
+        padding: 112px 0;
     }
 
     @media (min-resolution: 192dpi) {
@@ -1054,6 +1068,11 @@ img {
     .subscribe-input {
         width: 264px;
         margin-bottom: 0;
+
+    }
+
+    .subscribe-label {
+        margin-bottom: 0;
         margin-right: 24px;
     }
 
@@ -1092,6 +1111,12 @@ img {
 
     .container {
         max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header-logo {
+        margin-right: 76px;
     }
 
     .header-addres {
@@ -1110,6 +1135,10 @@ img {
         align-items: center;
     }
 
+    .header-addres-item:not(:last-child) {
+        margin-bottom: 0;
+    }
+
     .header-addres-link {
         font-size: 16px;
         line-height: 1.5;
@@ -1117,6 +1146,7 @@ img {
     }
 
     .section-order {
+        padding: 188px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-desc.jpg);
     }
 
@@ -1208,8 +1238,13 @@ img {
         gap: 24px;
     }
 
+    .subscribe-label {
+        margin-right: 0;
+    }
+
     .subscribe-input {
         margin-right: 0;
+        opacity: 1;
     }
 
     .modal {
