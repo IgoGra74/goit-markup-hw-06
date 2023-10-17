@@ -68,6 +68,7 @@ img {
 .header .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-nav {
@@ -257,11 +258,12 @@ img {
 .section-order-title {
     color: #FFF;
     text-align: center;
-    font-size: 56px;
+    font-size: 36px;
     font-weight: 700;
-    line-height: 1.07;
-    letter-spacing: 1.12px;
-    max-width: 496px;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    max-width: 288px;
+    text-transform: capitalize;
     margin-right: auto;
     margin-left: auto;
 }
@@ -282,7 +284,7 @@ img {
     border: none;
     align-items: center;
     gap: 10px;
-    margin-top: 48px;
+    margin-top: 72px;
     margin-right: auto;
     margin-left: auto;
     border-radius: 4px;
@@ -960,13 +962,15 @@ img {
     .header-addres {
         font-style: normal;
         display: inline-block;
-        align-items: center;
         justify-items: center;
-        padding: 16px 0;
     }
 
-    .header-addres-item:not(:last-child) {
+    .header-addres-item {
         margin-bottom: 12px;
+    }
+
+    .header-addres-item:last-child {
+        margin-bottom: 0;
     }
 
     .header-addres-link {
@@ -990,9 +994,24 @@ img {
         display: none;
     }
 
+    .mob-menu-container {
+        display: none;
+    }
+
     .section-order {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tablet.jpg);
         padding: 112px 0;
+    }
+
+    .section-order-title {
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 1.12px;
+        max-width: 496px;
+    }
+
+    .button-order {
+        margin-top: 36px;
     }
 
     @media (min-resolution: 192dpi) {
@@ -1148,6 +1167,10 @@ img {
     .section-order {
         padding: 188px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-desc.jpg);
+    }
+
+    .button-order {
+        margin-top: 48px;
     }
 
     @media (min-resolution: 192dpi) {
